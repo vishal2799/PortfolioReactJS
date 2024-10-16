@@ -1,11 +1,30 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { Avatar2, Menu } from '../assets/images';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 const MainLayout = () => {
+  const location = useLocation();
+
+  // Define a background gradient based on the current route
+  let backgroundClass = '';
+
+  switch (location.pathname) {
+    case '/':
+      backgroundClass = 'bg-gradient-to-r from-blue-500 to-purple-500';
+      break;
+    case '/about':
+      backgroundClass = 'bg-gradient-to-r from-green-400 to-blue-500';
+      break;
+    // Add more routes and their respective backgrounds here
+    default:
+      backgroundClass = 'bg-gradient-to-r from-gray-500 to-gray-700'; // default background
+  }
+
   return (
-    <div className='py-6 px-5 bg-gradient-to-br from-[#ffce4c] to-[#ff6321] flex items-center justify-center h-screen'>
+    <div
+      className={`py-6 px-5 ${backgroundClass} flex items-center justify-center h-screen`}
+    >
       <div className='w-full h-full max-w-screen-xl mx-auto bg-[#000000d9] rounded-lg overflow-hidden'>
         <div className='mockup-browser h-full flex'>
           {/* Left Sidebar */}
@@ -36,18 +55,18 @@ const MainLayout = () => {
               >
                 About
               </Link>
-              <a
-                href=''
+              <Link
+                to=''
                 className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
               >
                 Projects
-              </a>
-              <a
-                href=''
+              </Link>
+              <Link
+                to='/contact'
                 className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             {/* Sidebar Footer */}

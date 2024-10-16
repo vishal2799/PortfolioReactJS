@@ -3,7 +3,7 @@ import { Chat, Grid, Smiley, Suitcase } from '../assets/images';
 export const homeCards = [
   {
     id: 1,
-    url: '/',
+    url: '/about',
     urlLabel: 'About',
     title: 'A Peek into My Creative Journey',
     icon: Smiley,
@@ -27,7 +27,7 @@ export const homeCards = [
   },
   {
     id: 4,
-    url: '/',
+    url: '/contact',
     urlLabel: 'Contact',
     title: 'Lets Start a Conversation',
     icon: Chat,

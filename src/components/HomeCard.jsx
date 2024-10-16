@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import { hexToRgb } from '../utils';
+import { Link } from 'react-router-dom';
 
 const HomeCard = ({ item }) => {
   return (
-    <a
-      href=''
+    <Link
+      to={item.url}
       style={{
         backgroundColor: `rgba(${hexToRgb(item.color)}, 0.2)`,
         borderColor: `rgba(${hexToRgb(item.color)}, 0.1)`,
@@ -38,7 +39,7 @@ const HomeCard = ({ item }) => {
         className={`absolute h-1 inset-x-0 top-auto bottom-0`}
       ></div>
       <div className='flex flex-col justify-start items-center absolute inset-x-0 top-0 bottom-auto'></div>
-    </a>
+    </Link>
   );
 };
 

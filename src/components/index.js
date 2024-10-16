@@ -1,3 +1,3 @@
 import HomeCard from './HomeCard';
-
-export { HomeCard };
+import SectionTop from './SectionTop';
+export { HomeCard, SectionTop };

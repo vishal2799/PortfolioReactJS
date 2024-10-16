@@ -1,46 +1,21 @@
 import { Avatar, Avatar2 } from '../assets/images';
+import { SectionTop } from '../components';
 import { aboutSkills } from '../constants';
 import { hexToRgb } from '../utils';
 
 const About = () => {
+  const info = {
+    title: 'Lets Connect and Collaborate',
+    desc: 'Reach out to discuss your project or ideas. I’m here to provide support and turn your vision into reality.',
+    label: 'Contact',
+    color: '#20d7ff',
+    icon1: Avatar,
+    icon2: Avatar2,
+    icon3: Avatar,
+  };
   return (
     <div>
-      <section className='p-6 pb-8 flex flex-col xl:flex-row xl:justify-between xl:items-center justify-start items-start gap-10 bg-[#ffc42708] border-b border-[#ffffff1a]'>
-        <div className='flex flex-col justify-start items-start gap-4'>
-          <div
-            style={{
-              borderColor: `rgba(${hexToRgb('#ffc427')}, 0.2)`,
-              backgroundColor: `rgba(${hexToRgb('#ffc427')}, 0.05)`,
-            }}
-            className={`py-2 px-[10px] rounded-[100px] flex items-center justify-center border`}
-          >
-            <div style={{ color: '#ffc427' }} className={`text-xs`}>
-              About
-            </div>
-          </div>
-          <div className='flex flex-col gap-3'>
-            <h1 className='text-2xl lg:text-[32px] max-w-72 lg:max-w-md font-medium text-white'>
-              Inside My World – The Story Behind Work
-            </h1>
-            <p className='max-w-md text-white text-opacity-50'>
-              Get a glimpse into my journey and the inspiration behind my work.
-              Discover what drives me and how my experiences shape my creative
-              vision.
-            </p>
-          </div>
-        </div>
-        <div className='flex items-center justify-start'>
-          <div className='relative rounded-full p-3 lg:p-4 border border-[#ffc4271a] bg-[#ffc427] z-[3]'>
-            <img src={Avatar} alt='' className='w-14 h-14 lg:w-24 lg:h-24' />
-          </div>
-          <div className='ml-[-18px] backdrop-blur-2xl relative rounded-full p-3 lg:p-4 border border-[#ffc4271a] bg-[#ffc42759] z-[2]'>
-            <img src={Avatar2} alt='' className='w-14 h-14 lg:w-24 lg:h-24' />
-          </div>
-          <div className='ml-[-18px] backdrop-blur-2xl relative rounded-full p-3 lg:p-4 border border-[#ffc4271a] bg-[#ffc4271a] z-[1]'>
-            <img src={Avatar} alt='' className='w-14 h-14 lg:w-24 lg:h-24' />
-          </div>
-        </div>
-      </section>
+      <SectionTop info={info} />
       <section className='flex flex-col lg:grid lg:grid-cols-2 gap-4 px-6 pt-8 pb-10 border-b border-[#ffffff1a]'>
         <h2 className='max-w-60 text-lg lg:text-2xl font-medium text-white'>
           ✨ The Drive, Passion, and Vision Behind My Work
