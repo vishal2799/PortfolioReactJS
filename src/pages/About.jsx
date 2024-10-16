@@ -1,21 +1,11 @@
-import { Avatar, Avatar2 } from '../assets/images';
 import { SectionTop } from '../components';
-import { aboutSkills } from '../constants';
+import { aboutSkills, pageinfo } from '../constants';
 import { hexToRgb } from '../utils';
 
 const About = () => {
-  const info = {
-    title: 'Lets Connect and Collaborate',
-    desc: 'Reach out to discuss your project or ideas. I’m here to provide support and turn your vision into reality.',
-    label: 'Contact',
-    color: '#20d7ff',
-    icon1: Avatar,
-    icon2: Avatar2,
-    icon3: Avatar,
-  };
   return (
     <div>
-      <SectionTop info={info} />
+      <SectionTop info={pageinfo.about} />
       <section className='flex flex-col lg:grid lg:grid-cols-2 gap-4 px-6 pt-8 pb-10 border-b border-[#ffffff1a]'>
         <h2 className='max-w-60 text-lg lg:text-2xl font-medium text-white'>
           ✨ The Drive, Passion, and Vision Behind My Work

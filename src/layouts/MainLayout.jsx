@@ -16,6 +16,9 @@ const MainLayout = () => {
     case '/about':
       backgroundClass = 'bg-gradient-to-r from-green-400 to-blue-500';
       break;
+    case '/contact':
+      backgroundClass = 'bg-gradient-to-r from-green-400 to-blue-500';
+      break;
     // Add more routes and their respective backgrounds here
     default:
       backgroundClass = 'bg-gradient-to-r from-gray-500 to-gray-700'; // default background

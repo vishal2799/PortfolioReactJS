@@ -1,4 +1,32 @@
-import { Chat, Grid, Smiley, Suitcase } from '../assets/images';
+import {
+  Avatar,
+  Avatar2,
+  Chat,
+  Grid,
+  Smiley,
+  Suitcase,
+} from '../assets/images';
+
+export const pageinfo = {
+  about: {
+    title: 'Lets Connect and Collaborate',
+    desc: 'Reach out to discuss your project or ideas. I’m here to provide support and turn your vision into reality.',
+    label: 'Contact',
+    color: '#20d7ff',
+    icon1: Avatar,
+    icon2: Avatar2,
+    icon3: Avatar,
+  },
+  contact: {
+    title: 'Lets Connect and Collaborate',
+    desc: 'Reach out to discuss your project or ideas. I’m here to provide support and turn your vision into reality.',
+    label: 'Contact',
+    color: '#20d7ff',
+    icon1: Avatar,
+    icon2: Avatar2,
+    icon3: Avatar,
+  },
+};
 
 export const homeCards = [
   {
