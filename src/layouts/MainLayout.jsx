@@ -5,10 +5,10 @@ import { FiArrowUpRight } from 'react-icons/fi';
 const MainLayout = () => {
   return (
     <div className='py-6 px-5 bg-gradient-to-br from-[#ffce4c] to-[#ff6321] flex items-center justify-center h-screen'>
-      <div className='w-full h-full bg-[#000000d9] rounded-lg overflow-hidden'>
+      <div className='w-full h-full max-w-screen-xl mx-auto bg-[#000000d9] rounded-lg overflow-hidden'>
         <div className='mockup-browser h-full flex'>
           {/* Left Sidebar */}
-          <div className='hidden md:flex flex-col w-1/3 max-w-xs border-r border-[#ffffff1a] bg-[#0003] overflow-auto'>
+          <div className='hidden md:flex flex-col w-2/5 lg:w-1/4 max-w-xs border-r border-[#ffffff1a] bg-[#0003] overflow-auto'>
             {/* Sidebar Header */}
             <div className='p-8 pt-10 flex flex-col items-start gap-5 border-b border-[#ffffff1a]'>
               <a
@@ -62,7 +62,7 @@ const MainLayout = () => {
           </div>
 
           {/* Right Content Area */}
-          <div className='w-full md:w-2/3 flex flex-col h-full overflow-auto'>
+          <div className='w-full md:w-3/5 lg:w-3/4 flex flex-col h-full overflow-auto'>
             {/* Mobile Menu Button */}
             <div className='fixed md:hidden top-[92px] right-11 z-[101] h-10 w-10 p-[10px] rounded-xl border border-[#ffffff0d] backdrop-blur-2xl'>
               <img src={Menu} alt='menu' className='w-5 h-5 opacity-65' />

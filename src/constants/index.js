@@ -34,3 +34,30 @@ export const homeCards = [
     color: '#20d7ff',
   },
 ];
+
+export const aboutSkills = [
+  {
+    id: 1,
+    label: 'Front-End Development',
+  },
+  {
+    id: 1,
+    label: 'UI/UX Design',
+  },
+  {
+    id: 1,
+    label: 'Animation & Interactivity',
+  },
+  {
+    id: 1,
+    label: 'Responsive Design',
+  },
+  {
+    id: 1,
+    label: 'Mobile Development',
+  },
+  {
+    id: 1,
+    label: 'Data Visualization',
+  },
+];
