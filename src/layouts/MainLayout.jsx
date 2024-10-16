@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Avatar2, Menu } from '../assets/images';
 import { FiArrowUpRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const MainLayout = () => {
   return (
@@ -11,12 +12,12 @@ const MainLayout = () => {
           <div className='hidden md:flex flex-col w-2/5 lg:w-1/4 max-w-xs border-r border-[#ffffff1a] bg-[#0003] overflow-auto'>
             {/* Sidebar Header */}
             <div className='p-8 pt-10 flex flex-col items-start gap-5 border-b border-[#ffffff1a]'>
-              <a
-                href=''
+              <Link
+                to='/'
                 className='p-[6px] flex justify-center items-center rounded-full border border-[#ffffff0d] bg-white bg-opacity-5'
               >
                 <img src={Avatar2} alt='avatar' className='w-12 h-12' />
-              </a>
+              </Link>
               <div>
                 <div className='text-white text-sm font-medium'>
                   Vishal Sharma
@@ -29,12 +30,12 @@ const MainLayout = () => {
 
             {/* Sidebar Links */}
             <div className='flex-grow overflow-auto p-5'>
-              <a
-                href=''
+              <Link
+                to='/about'
                 className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
               >
                 About
-              </a>
+              </Link>
               <a
                 href=''
                 className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
