@@ -4,4 +4,13 @@ import Label from './Label';
 import ServiceCard from './ServiceCard';
 import AwardCard from './AwardCard';
 import ProjectCard from './ProjectCard';
-export { HomeCard, SectionTop, Label, ServiceCard, AwardCard, ProjectCard };
+import ScrollToTop from './ScrollToTop';
+export {
+  HomeCard,
+  SectionTop,
+  Label,
+  ServiceCard,
+  AwardCard,
+  ProjectCard,
+  ScrollToTop,
+};

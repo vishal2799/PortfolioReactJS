@@ -1,11 +1,14 @@
-import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
-import { Avatar2, Menu } from '../assets/images';
+import { Outlet, useLocation } from 'react-router-dom';
+import { Avatar2, Close, Menu } from '../assets/images';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
+import { ScrollToTop } from '../components';
+import { useState } from 'react';
 
 const MainLayout = () => {
   const location = useLocation();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Sidebar visibility state
 
   // Define a background gradient based on the current route
   let backgroundClass = '';
@@ -32,13 +35,18 @@ const MainLayout = () => {
 
   return (
     <main>
+      <ScrollToTop />
       <div
         className={`py-6 px-5 ${backgroundClass} flex items-center justify-center h-screen`}
       >
-        <div className='w-full h-full max-w-screen-xl mx-auto bg-[#000000d9] rounded-lg overflow-hidden'>
-          <div className='mockup-browser h-full flex'>
+        <div className='w-full h-full max-w-screen-xl mx-auto bg-[#000000e6] rounded-lg overflow-hidden'>
+          <div className='mockup-browser h-full flex relative'>
             {/* Left Sidebar */}
-            <div className='hidden md:flex flex-col w-2/5 lg:w-1/4 max-w-xs border-r border-[#ffffff1a] bg-[#0003] overflow-auto'>
+            <div
+              className={`${
+                isSidebarOpen ? 'translate-x-0 flex' : '-translate-x-full'
+              } md:translate-x-0 transition-transform absolute w-full md:static top-0 left-0 z-50 md:w-2/5 lg:w-1/4 md:max-w-xs h-full bg-[#00000073] backdrop-blur-[50px] border-r border-black md:bg-[#0003] md:border-[#ffffff1a] md:flex flex-col overflow-auto`}
+            >
               {/* Sidebar Header */}
               <div className='p-8 pt-10 flex flex-col items-start gap-5 border-b border-[#ffffff1a]'>
                 <Link
@@ -63,6 +71,7 @@ const MainLayout = () => {
                   <Link
                     key={index}
                     to={link.url}
+                    onClick={() => setIsSidebarOpen(false)} // Close sidebar on link click
                     className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white hover:bg-white hover:bg-opacity-10 text-sm font-medium'
                   >
                     {link.label}
@@ -82,13 +91,18 @@ const MainLayout = () => {
               </div>
             </div>
 
+            {/* Mobile Menu Button */}
+            <div className='fixed md:hidden top-[44px] right-11 z-[101] h-10 w-10 p-[10px] rounded-xl border border-[#ffffff0d] backdrop-blur-2xl'>
+              <img
+                src={isSidebarOpen ? Close : Menu} // Toggle between icons
+                alt='menu'
+                className='w-5 h-5 opacity-65'
+                onClick={() => setIsSidebarOpen(!isSidebarOpen)} // Toggle sidebar visibility
+              />
+            </div>
+
             {/* Right Content Area */}
             <div className='w-full md:w-3/5 lg:w-3/4 flex flex-col h-full overflow-auto'>
-              {/* Mobile Menu Button */}
-              <div className='fixed md:hidden top-[44px] right-11 z-[101] h-10 w-10 p-[10px] rounded-xl border border-[#ffffff0d] backdrop-blur-2xl'>
-                <img src={Menu} alt='menu' className='w-5 h-5 opacity-65' />
-              </div>
-
               {/* Main Content */}
               <div className='flex-grow'>
                 <Outlet />
@@ -110,7 +124,6 @@ const MainLayout = () => {
           </div>
         </div>
       </div>
-      <ScrollRestoration />
     </main>
   );
 };

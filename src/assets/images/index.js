@@ -21,6 +21,7 @@ import Portfolio4 from './portfolio4.avif';
 import Project1 from './project1.avif';
 import Project2 from './project2.avif';
 import Project3 from './project3.avif';
+import Close from './close.svg';
 
 export {
   Menu,
@@ -46,4 +47,5 @@ export {
   Project1,
   Project2,
   Project3,
+  Close,
 };
