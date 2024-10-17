@@ -2,6 +2,7 @@ import MainLayout from './layouts/MainLayout';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { About, Contact, Home, Portfolio, Services } from './pages';
 import ErrorPage from './pages/error-page';
+import SinglePortfolio from './pages/SinglePortfolio';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/portfolio',
         element: <Portfolio />,
+      },
+      {
+        path: '/portfolio/:id',
+        element: <SinglePortfolio />,
       },
     ],
   },

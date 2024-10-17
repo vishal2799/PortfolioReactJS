@@ -27,7 +27,7 @@ const MainLayout = () => {
       backgroundClass = 'bg-gradient-to-br from-[#c06fff] to-[#9226e6]';
       break;
     default:
-      backgroundClass = 'bg-gradient-to-r from-gray-500 to-gray-700'; // default background
+      backgroundClass = 'bg-[#8cc71b]'; // default background
   }
 
   return (

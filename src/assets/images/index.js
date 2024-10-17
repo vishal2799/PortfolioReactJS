@@ -14,6 +14,10 @@ import Service1 from './service1.avif';
 import Service2 from './service2.avif';
 import Service3 from './service3.avif';
 import Memoji1 from './memoji1.avif';
+import Portfolio1 from './portfolio1.avif';
+import Portfolio2 from './portfolio2.avif';
+import Portfolio3 from './portfolio3.avif';
+import Portfolio4 from './portfolio4.avif';
 
 export {
   Menu,
@@ -32,4 +36,8 @@ export {
   Service2,
   Service3,
   Memoji1,
+  Portfolio1,
+  Portfolio2,
+  Portfolio3,
+  Portfolio4,
 };

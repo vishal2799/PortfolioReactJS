@@ -12,6 +12,10 @@ import {
   Service2,
   Service3,
   Memoji1,
+  Portfolio1,
+  Portfolio2,
+  Portfolio3,
+  Portfolio4,
 } from '../assets/images';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -191,5 +195,32 @@ export const servicesSkills = [
     url: '/',
     icon: FaGithub,
     label: 'HTML 5',
+  },
+];
+
+export const portfolioItems = [
+  {
+    id: 1,
+    image: Portfolio1,
+    title: 'Squash',
+    desc: 'Website',
+  },
+  {
+    id: 1,
+    image: Portfolio2,
+    title: 'Squash',
+    desc: 'Website',
+  },
+  {
+    id: 1,
+    image: Portfolio3,
+    title: 'Squash',
+    desc: 'Website',
+  },
+  {
+    id: 1,
+    image: Portfolio4,
+    title: 'Squash',
+    desc: 'Website',
   },
 ];

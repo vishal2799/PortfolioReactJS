@@ -3,4 +3,5 @@ import SectionTop from './SectionTop';
 import Label from './Label';
 import ServiceCard from './ServiceCard';
 import AwardCard from './AwardCard';
-export { HomeCard, SectionTop, Label, ServiceCard, AwardCard };
+import ProjectCard from './ProjectCard';
+export { HomeCard, SectionTop, Label, ServiceCard, AwardCard, ProjectCard };
