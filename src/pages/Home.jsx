@@ -21,7 +21,7 @@ const Home = () => {
         </div>
       </section>
       <section className='px-6 py-8 flex flex-col gap-y-3'>
-        <div className='flex flex-col gap-y-3'>
+        <div className='flex flex-col gap-3 xl:grid xl:grid-cols-2'>
           {homeCards.map((item, index) => (
             <HomeCard key={index} item={item} />
           ))}

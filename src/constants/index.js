@@ -1,5 +1,4 @@
 import {
-  Avatar,
   Avatar2,
   Avatar3,
   Chat,
@@ -12,6 +11,7 @@ import {
   Service1,
   Service2,
   Service3,
+  Memoji1,
 } from '../assets/images';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -29,7 +29,7 @@ export const pageinfo = {
     desc: 'Get a glimpse into my journey and the inspiration behind my work. Discover what drives me and how my experiences shape my creative vision.',
     label: 'About',
     color: '#ffc427',
-    icon1: Avatar,
+    icon1: Memoji1,
     icon2: Avatar2,
     icon3: Avatar3,
   },

@@ -31,12 +31,12 @@ const SectionTop = ({ info }) => {
             backgroundColor: info.color,
             borderColor: `rgba(${hexToRgb(info.color)}, 0.1)`,
           }}
-          className='relative rounded-full p-3 md:p-4 border z-[3]'
+          className='relative rounded-full p-6 md:p-8 border z-[3]'
         >
           <img
             src={info.icon1}
             alt=''
-            className='w-14 h-14 md:w-20 md:h-20 lg:w-24 lg:h-24'
+            className='w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16'
           />
         </div>
         <div
@@ -44,12 +44,12 @@ const SectionTop = ({ info }) => {
             backgroundColor: `rgba(${hexToRgb(info.color)}, 0.35)`,
             borderColor: `rgba(${hexToRgb(info.color)}, 0.1)`,
           }}
-          className='ml-[-18px] backdrop-blur-2xl relative rounded-full p-3 md:p-4 border z-[2]'
+          className='ml-[-18px] backdrop-blur-2xl relative rounded-full p-6 md:p-8 border z-[2]'
         >
           <img
             src={info.icon2}
             alt=''
-            className='w-14 h-14 md:w-20 md:h-20 lg:w-24 lg:h-24'
+            className='w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16'
           />
         </div>
         <div
@@ -57,12 +57,12 @@ const SectionTop = ({ info }) => {
             backgroundColor: `rgba(${hexToRgb(info.color)}, 0.1)`,
             borderColor: `rgba(${hexToRgb(info.color)}, 0.1)`,
           }}
-          className='ml-[-18px] backdrop-blur-2xl relative rounded-full p-3 md:p-4 border z-[1]'
+          className='ml-[-18px] backdrop-blur-2xl relative rounded-full p-6 md:p-8 border z-[1]'
         >
           <img
             src={info.icon3}
             alt=''
-            className='w-14 h-14 md:w-20 md:h-20 lg:w-24 lg:h-24'
+            className='w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16'
           />
         </div>
       </div>

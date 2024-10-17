@@ -8,10 +8,12 @@ const Contact = () => {
   return (
     <div>
       <SectionTop info={pageinfo.contact} />
-      <section className='px-6 pt-8 pb-10 flex flex-col gap-3'>
+      <section className='px-6 pt-8 pb-10 flex flex-col gap-3 xl:grid xl:grid-cols-2'>
         <div className='px-5 pt-6 pb-8 flex flex-col relative rounded-xl gap-8 flex-1 bg-[#20d7ff0d] border border-[#20d7ff0d]'>
           <div className='flex flex-col max-w-sm gap-3'>
-            <h2 className='text-lg font-medium text-white'>📤 Get In Touch</h2>
+            <h2 className='text-lg lg:text-2xl font-medium text-white'>
+              📤 Get In Touch
+            </h2>
             <p className='text-white text-opacity-50 text-sm font-medium'>
               Have a question or want to start a project? Contact me, and let’s
               make your ideas come to life!
@@ -45,9 +47,11 @@ const Contact = () => {
             <div className='w-60 h-16 rounded-[100px] mt-[-32px] blur-2xl'></div>
           </div>
         </div>
-        <div className='flex flex-col gap-3 flex-initial'>
+        <div className='flex flex-col gap-3 flex-initial xl:justify-between'>
           <div className='flex relative flex-col gap-5 rounded-xl py-6 px-5 bg-[#20d7ff0d] border border-[#20d7ff0d]'>
-            <h3 className='text-base font-medium text-white'>🔹 Follow Me</h3>
+            <h3 className='text-base md:text-xl font-medium text-white'>
+              🔹 Follow Me
+            </h3>
             <div className='grid grid-cols-2 gap-[6px]'>
               {contactFollow.map((item, index) => (
                 <a
@@ -62,7 +66,7 @@ const Contact = () => {
           </div>
           <div className='overflow-hidden flex flex-col justify-start items-start relative px-5 py-6 gap-6 rounded-xl bg-[#20d7ff1a] border border-[#20d7ff1a]'>
             <div className='flex flex-col gap-[10px] max-w-60 w-full'>
-              <h3 className='text-base font-medium text-white'>
+              <h3 className='text-base md:text-xl font-medium text-white'>
                 🦋 Book a Call
               </h3>
               <p className='text-sm font-medium text-white text-opacity-50'>
@@ -83,9 +87,9 @@ const Contact = () => {
                   borderColor: `rgba(${hexToRgb('#20d7ff')}, 0.05)`,
                   backgroundColor: `rgba(${hexToRgb('#20d7ff')}, 0.05)`,
                 }}
-                className={`flex items-center justify-center rounded-full border p-7`}
+                className={`flex items-center justify-center rounded-full border p-7 lg:p-12`}
               >
-                <img src={Phone} className='w-12 h-12' />
+                <img src={Phone} className='w-12 h-12 lg:w-14 lg:h-14' />
               </div>
             </div>
           </div>

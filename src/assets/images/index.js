@@ -13,6 +13,7 @@ import Phone from './phone.svg';
 import Service1 from './service1.avif';
 import Service2 from './service2.avif';
 import Service3 from './service3.avif';
+import Memoji1 from './memoji1.avif';
 
 export {
   Menu,
@@ -30,4 +31,5 @@ export {
   Service1,
   Service2,
   Service3,
+  Memoji1,
 };
