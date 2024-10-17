@@ -26,6 +26,15 @@ export const pageinfo = {
     icon2: Avatar2,
     icon3: Avatar,
   },
+  services: {
+    title: 'Explore My Range of Specialized Services',
+    desc: 'Explore services crafted to bring your vision to life. From innovative solutions to expert support, I offer everything needed for exceptional results.',
+    label: 'Services',
+    color: '#2ef171',
+    icon1: Avatar,
+    icon2: Avatar2,
+    icon3: Avatar,
+  },
 };
 
 export const homeCards = [
@@ -60,6 +69,29 @@ export const homeCards = [
     title: 'Lets Start a Conversation',
     icon: Chat,
     color: '#20d7ff',
+  },
+];
+
+export const servicesLabel = [
+  {
+    id: 1,
+    label: 'Front-End Development',
+    color: '#2ef171',
+  },
+  {
+    id: 1,
+    label: 'UI/UX Design',
+    color: '#2ef171',
+  },
+  {
+    id: 1,
+    label: 'Animation & Interactivity',
+    color: '#2ef171',
+  },
+  {
+    id: 1,
+    label: 'Responsive Design',
+    color: '#2ef171',
   },
 ];
 

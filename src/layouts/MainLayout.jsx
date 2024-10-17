@@ -11,15 +11,20 @@ const MainLayout = () => {
 
   switch (location.pathname) {
     case '/':
-      backgroundClass = 'bg-gradient-to-r from-blue-500 to-purple-500';
+      backgroundClass = 'bg-gradient-to-br from-[#ffce4c] to-[#ff6321]';
       break;
     case '/about':
-      backgroundClass = 'bg-gradient-to-r from-green-400 to-blue-500';
+      backgroundClass = 'bg-gradient-to-br from-[#ffe353] to-[#ffc121]';
       break;
     case '/contact':
-      backgroundClass = 'bg-gradient-to-r from-green-400 to-blue-500';
+      backgroundClass = 'bg-gradient-to-br from-[#20d7ff] to-[#00a5cd]';
       break;
-    // Add more routes and their respective backgrounds here
+    case '/services':
+      backgroundClass = 'bg-gradient-to-br from-[#2ef171] to-[#10983f]';
+      break;
+    case '/portfolio':
+      backgroundClass = 'bg-gradient-to-br from-[#c06fff] to-[#9226e6]';
+      break;
     default:
       backgroundClass = 'bg-gradient-to-r from-gray-500 to-gray-700'; // default background
   }
@@ -65,6 +70,12 @@ const MainLayout = () => {
                 Projects
               </Link>
               <Link
+                to='/services'
+                className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
+              >
+                Services
+              </Link>
+              <Link
                 to='/contact'
                 className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
               >
@@ -87,7 +98,7 @@ const MainLayout = () => {
           {/* Right Content Area */}
           <div className='w-full md:w-3/5 lg:w-3/4 flex flex-col h-full overflow-auto'>
             {/* Mobile Menu Button */}
-            <div className='fixed md:hidden top-[92px] right-11 z-[101] h-10 w-10 p-[10px] rounded-xl border border-[#ffffff0d] backdrop-blur-2xl'>
+            <div className='fixed md:hidden top-[44px] right-11 z-[101] h-10 w-10 p-[10px] rounded-xl border border-[#ffffff0d] backdrop-blur-2xl'>
               <img src={Menu} alt='menu' className='w-5 h-5 opacity-65' />
             </div>
 

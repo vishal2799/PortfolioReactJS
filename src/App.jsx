@@ -1,6 +1,6 @@
 import MainLayout from './layouts/MainLayout';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { About, Contact, Home } from './pages';
+import { About, Contact, Home, Services } from './pages';
 import ErrorPage from './pages/error-page';
 
 const router = createBrowserRouter([
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/services',
+        element: <Services />,
       },
     ],
   },
