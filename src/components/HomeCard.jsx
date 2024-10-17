@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { hexToRgb } from '../utils';
 import { Link } from 'react-router-dom';
+import Label from './Label';
 
 const HomeCard = ({ item }) => {
   return (
@@ -13,17 +14,7 @@ const HomeCard = ({ item }) => {
       }}
       className={`hover:shadow-custom-inset border flex flex-col gap-y-[14px] relative overflow-hidden flex-1 rounded-xl justify-start items-start pt-6 pb-8 px-5`}
     >
-      <div
-        style={{
-          borderColor: `rgba(${hexToRgb(item.color)}, 0.2)`,
-          backgroundColor: `rgba(${hexToRgb(item.color)}, 0.05)`,
-        }}
-        className={`py-2 px-[10px] rounded-[100px] flex items-center justify-center border`}
-      >
-        <div style={{ color: item.color }} className={`text-xs`}>
-          {item.urlLabel}
-        </div>
-      </div>
+      <Label item={item} />
       <h2 className='text-lg font-medium max-w-36'>{item.title}</h2>
       <div
         style={{

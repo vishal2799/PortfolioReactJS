@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Avatar2, Menu } from '../assets/images';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { navLinks } from '../constants';
 
 const MainLayout = () => {
   const location = useLocation();
@@ -57,37 +58,22 @@ const MainLayout = () => {
 
             {/* Sidebar Links */}
             <div className='flex-grow overflow-auto p-5'>
-              <Link
-                to='/about'
-                className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
-              >
-                About
-              </Link>
-              <Link
-                to=''
-                className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
-              >
-                Projects
-              </Link>
-              <Link
-                to='/services'
-                className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
-              >
-                Services
-              </Link>
-              <Link
-                to='/contact'
-                className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white text-sm font-medium'
-              >
-                Contact
-              </Link>
+              {navLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  to={link.url}
+                  className='flex justify-start items-center py-[10px] px-[14px] gap-3 rounded-lg text-white hover:bg-white hover:bg-opacity-10 text-sm font-medium'
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
 
             {/* Sidebar Footer */}
             <div className='p-8 border-t border-white border-opacity-10'>
               <a
                 href=''
-                className='flex items-center justify-center gap-[6px] px-4 py-3 rounded-[10px] bg-white bg-opacity-10 text-sm font-medium text-white text-opacity-65 border border-white border-opacity-5'
+                className='flex items-center justify-center gap-[6px] px-4 py-3 rounded-[10px] bg-white bg-opacity-10 hover:bg-opacity-20 text-sm font-medium text-white text-opacity-65 border border-white border-opacity-5'
               >
                 Book a Call
                 <FiArrowUpRight className='text-base' />
@@ -112,7 +98,10 @@ const MainLayout = () => {
               <div className='text-xs font-medium text-[#ffffff4d]'>
                 © 2024, All Rights Reserved
               </div>
-              <a href='' className='text-xs font-medium text-[#ffffff4d]'>
+              <a
+                href=''
+                className='text-xs font-medium text-[#ffffff4d] hover:text-white'
+              >
                 Licenses
               </a>
             </section>

@@ -1,9 +1,8 @@
 import { FiArrowUpRight } from 'react-icons/fi';
 import { SectionTop } from '../components';
-import { pageinfo } from '../constants';
-import { FaInstagram } from 'react-icons/fa';
+import { contactFollow, pageinfo } from '../constants';
 import { hexToRgb } from '../utils';
-import { Grid } from '../assets/images';
+import { Phone } from '../assets/images';
 
 const Contact = () => {
   return (
@@ -22,23 +21,23 @@ const Contact = () => {
             <form action='' className='flex flex-col gap-2'>
               <input
                 type='text'
-                className='py-[18px] px-5 h-[52px] rounded-[10px] w-full text-sm text-white bg-[#20d7ff0d] border border-[#20d7ff1a]'
+                className='py-[18px] px-5 h-[52px] rounded-[10px] w-full outline-none text-sm text-white bg-[#20d7ff0d] hover:bg-[#20d6ff2c] border border-[#20d7ff1a]'
                 placeholder='Your name'
               />
               <input
                 type='text'
-                className='py-[18px] px-5 h-[52px] rounded-[10px] w-full text-sm text-white bg-[#20d7ff0d] border border-[#20d7ff1a]'
+                className='py-[18px] px-5 h-[52px] rounded-[10px] w-full outline-none text-sm text-white bg-[#20d7ff0d] hover:bg-[#20d6ff2c] border border-[#20d7ff1a]'
                 placeholder='Your name'
               />
               <textarea
                 rows={5}
                 placeholder='How can I help you?'
-                className='py-[18px] px-5 rounded-[10px] w-full text-sm text-white bg-[#20d7ff0d] border border-[#20d7ff1a]'
+                className='py-[18px] px-5 rounded-[10px] w-full text-sm outline-none text-white bg-[#20d7ff0d] hover:bg-[#20d6ff2c] border border-[#20d7ff1a]'
               ></textarea>
               <input
                 type='submit'
                 value='Send a Message'
-                className='p-4 rounded-[10px] text-[#20d7ff] bg-[#20d7ff33] border border-[#20d7ff1a] cursor-pointer'
+                className='p-4 rounded-[10px] text-[#20d7ff] outline-none bg-[#20d7ff33] hover:bg-[#20d6ff41] border border-[#20d7ff1a] cursor-pointer'
               />
             </form>
           </div>
@@ -50,30 +49,15 @@ const Contact = () => {
           <div className='flex relative flex-col gap-5 rounded-xl py-6 px-5 bg-[#20d7ff0d] border border-[#20d7ff0d]'>
             <h3 className='text-base font-medium text-white'>🔹 Follow Me</h3>
             <div className='grid grid-cols-2 gap-[6px]'>
-              <a
-                href=''
-                className='flex flex-col justify-center items-center py-6 px-5 rounded-[10px] bg-[#20d7ff0d] border border-[#ffffff0d]'
-              >
-                <FaInstagram className='w-7 h-7 text-[#20d7ff]' />
-              </a>
-              <a
-                href=''
-                className='flex flex-col justify-center items-center py-6 px-5 rounded-[10px] bg-[#20d7ff0d] border border-[#ffffff0d]'
-              >
-                <FaInstagram className='w-7 h-7 text-[#20d7ff]' />
-              </a>
-              <a
-                href=''
-                className='flex flex-col justify-center items-center py-6 px-5 rounded-[10px] bg-[#20d7ff0d] border border-[#ffffff0d]'
-              >
-                <FaInstagram className='w-7 h-7 text-[#20d7ff]' />
-              </a>
-              <a
-                href=''
-                className='flex flex-col justify-center items-center py-6 px-5 rounded-[10px] bg-[#20d7ff0d] border border-[#ffffff0d]'
-              >
-                <FaInstagram className='w-7 h-7 text-[#20d7ff]' />
-              </a>
+              {contactFollow.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.url}
+                  className='flex flex-col justify-center items-center py-6 px-5 rounded-[10px] bg-[#20d7ff0d] hover:bg-[#20d6ff1f] border border-[#ffffff0d]'
+                >
+                  <item.icon className='w-7 h-7 text-[#20d7ff]' />
+                </a>
+              ))}
             </div>
           </div>
           <div className='overflow-hidden flex flex-col justify-start items-start relative px-5 py-6 gap-6 rounded-xl bg-[#20d7ff1a] border border-[#20d7ff1a]'>
@@ -88,7 +72,7 @@ const Contact = () => {
             </div>
             <a
               href=''
-              className='flex items-center justify-center gap-[6px] px-4 py-3 rounded-[10px] bg-white bg-opacity-10 text-sm font-medium text-white text-opacity-65 border border-white border-opacity-5'
+              className='flex items-center justify-center gap-[6px] px-4 py-3 rounded-[10px] bg-white bg-opacity-10 hover:bg-opacity-25 text-sm font-medium text-white text-opacity-65 border border-white border-opacity-5'
             >
               Book a Call
               <FiArrowUpRight className='text-base' />
@@ -101,7 +85,7 @@ const Contact = () => {
                 }}
                 className={`flex items-center justify-center rounded-full border p-7`}
               >
-                <img src={Grid} className='w-12 h-12' />
+                <img src={Phone} className='w-12 h-12' />
               </div>
             </div>
           </div>

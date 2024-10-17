@@ -1,6 +1,5 @@
-import { FaInstagram } from 'react-icons/fa';
 import { SectionTop, ServiceCard } from '../components';
-import { pageinfo } from '../constants';
+import { pageinfo, servicesSkills } from '../constants';
 
 const Services = () => {
   return (
@@ -23,15 +22,18 @@ const Services = () => {
           </p>
         </div>
         <div className='grid grid-cols-2 gap-3'>
-          <a
-            href=''
-            className='flex flex-col justify-center items-center py-12 px-5 rounded-xl text-[#2ef171] bg-[#2ef1710d] border border-[#2ef1710d]'
-          >
-            <div className='relative flex flex-col justify-start items-center gap-[10px]'>
-              <FaInstagram className='w-12 h-12' />
-              <div className='text-xs font-medium'>HTML 5</div>
-            </div>
-          </a>
+          {servicesSkills.map((item, index) => (
+            <a
+              key={index}
+              href={item.url}
+              className='flex flex-col justify-center items-center py-12 px-5 rounded-xl text-[#2ef171] bg-[#2ef1710d] hover:bg-[#2ef1722d] border border-[#2ef1710d]'
+            >
+              <div className='relative flex flex-col justify-start items-center gap-[10px]'>
+                <item.icon className='w-12 h-12' />
+                <div className='text-xs font-medium'>{item.label}</div>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
     </div>
