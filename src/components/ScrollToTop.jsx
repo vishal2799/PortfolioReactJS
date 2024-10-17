@@ -5,7 +5,10 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top of the page on route change
+    const content = document.querySelector('.content-scroll'); // Target the right content area
+    if (content) {
+      content.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return null;

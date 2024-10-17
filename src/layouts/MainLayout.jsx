@@ -102,7 +102,7 @@ const MainLayout = () => {
             </div>
 
             {/* Right Content Area */}
-            <div className='w-full md:w-3/5 lg:w-3/4 flex flex-col h-full overflow-auto'>
+            <div className='w-full md:w-3/5 lg:w-3/4 flex flex-col h-full overflow-auto content-scroll'>
               {/* Main Content */}
               <div className='flex-grow'>
                 <Outlet />
