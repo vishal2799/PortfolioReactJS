@@ -18,6 +18,9 @@ import Portfolio1 from './portfolio1.avif';
 import Portfolio2 from './portfolio2.avif';
 import Portfolio3 from './portfolio3.avif';
 import Portfolio4 from './portfolio4.avif';
+import Project1 from './project1.avif';
+import Project2 from './project2.avif';
+import Project3 from './project3.avif';
 
 export {
   Menu,
@@ -40,4 +43,7 @@ export {
   Portfolio2,
   Portfolio3,
   Portfolio4,
+  Project1,
+  Project2,
+  Project3,
 };
