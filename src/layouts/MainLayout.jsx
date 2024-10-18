@@ -37,7 +37,9 @@ const MainLayout = () => {
     <main>
       <ScrollToTop />
       <div
-        className={`py-6 px-5 ${backgroundClass} flex items-center justify-center h-screen`}
+        className={[
+          `py-6 px-5 ${backgroundClass} flex items-center justify-center h-dvh`,
+        ]}
       >
         <div className='w-full h-full max-w-screen-xl mx-auto bg-[#000000e6] rounded-lg overflow-hidden'>
           <div className='mockup-browser h-full flex relative'>
