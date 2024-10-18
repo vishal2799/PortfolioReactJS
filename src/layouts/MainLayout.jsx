@@ -51,6 +51,7 @@ const MainLayout = () => {
               <div className='p-8 pt-10 flex flex-col items-start gap-5 border-b border-[#ffffff1a]'>
                 <Link
                   to='/'
+                  onClick={() => setIsSidebarOpen(false)}
                   className='p-[6px] flex justify-center items-center rounded-full border border-[#ffffff0d] bg-white bg-opacity-5'
                 >
                   <img src={Avatar2} alt='avatar' className='w-12 h-12' />
