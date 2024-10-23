@@ -224,3 +224,96 @@ export const portfolioItems = [
     desc: 'Website',
   },
 ];
+
+export const servicesList = [
+  {
+    title: 'Frontend Development',
+    description:
+      'I design and develop responsive websites and web applications using HTML, CSS, JavaScript, React.js, and Bootstrap.',
+    icon: FaLinkedin,
+    tags: [
+      {
+        id: 1,
+        label: 'Front-End Development',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'UI/UX Design',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'Animation & Interactivity',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'Responsive Design',
+        color: '#2ef171',
+      },
+    ],
+  },
+  {
+    title: 'Power Platform Solutions',
+    description:
+      'Building apps, automating workflows, and visualizing data using Power Apps, Power Automate, and Power BI.',
+    icon: FaLinkedin,
+    tags: [
+      {
+        id: 1,
+        label: 'Front-End Development',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'UI/UX Design',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'Animation & Interactivity',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'Responsive Design',
+        color: '#2ef171',
+      },
+    ],
+  },
+  {
+    title: 'Freelance Projects',
+    description:
+      'I offer freelance services, helping clients turn their ideas into functional and well-designed digital products.',
+    icon: FaLinkedin,
+    tags: [
+      {
+        id: 1,
+        label: 'Front-End Development',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'UI/UX Design',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'Animation & Interactivity',
+        color: '#2ef171',
+      },
+      {
+        id: 1,
+        label: 'Responsive Design',
+        color: '#2ef171',
+      },
+    ],
+  },
+];
+
+export const certifications = [
+  { id: 1, title: 'AZ-900', year: '2024' },
+  { id: 2, title: 'PL-900', year: '2024' },
+  { id: 3, title: 'PL-200', year: '2024' },
+];

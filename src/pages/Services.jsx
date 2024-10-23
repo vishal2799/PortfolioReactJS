@@ -1,5 +1,5 @@
 import { SectionTop, ServiceCard } from '../components';
-import { pageinfo, servicesSkills } from '../constants';
+import { pageinfo, servicesSkills, servicesList } from '../constants';
 
 const Services = () => {
   return (
@@ -7,10 +7,9 @@ const Services = () => {
       <SectionTop info={pageinfo.services} />
       <section className='flex flex-col gap-3 border border-[#ffffff1a] px-6 pt-8 pb-10'>
         <div className='flex flex-col lg:grid lg:grid-cols-2 gap-3'>
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
+          {servicesList.map((service, index) => (
+            <ServiceCard key={index} service={service} />
+          ))}
         </div>
       </section>
       <section className='flex flex-col gap-10 px-6 pt-8 pb-10'>

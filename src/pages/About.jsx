@@ -1,5 +1,5 @@
 import { AwardCard, Label, SectionTop } from '../components';
-import { aboutSkills, pageinfo } from '../constants';
+import { aboutSkills, certifications, pageinfo } from '../constants';
 
 const About = () => {
   return (
@@ -10,12 +10,17 @@ const About = () => {
           ✨ The Drive, Passion, and Vision Behind My Work
         </h2>
         <p className='max-w-[464px] text-white text-opacity-50 text-sm font-medium leading-4'>
-          Im David Harrison, a creative developer passionate about turning ideas
-          into engaging digital experiences. Starting in New Jersey, my love for
-          tech and design grew from building simple sites to developing complex
-          applications. <br /> <br /> I blend technical skill with design to
-          create seamless, user-friendly solutions, always pushing boundaries to
-          exceed expectations.
+          I’m a passionate Frontend Developer with a strong background in
+          creating responsive, user-friendly websites using HTML, CSS,
+          JavaScript, React, and Bootstrap. Over the past year, I’ve also begun
+          transitioning into the Power Platform, exploring the potential of
+          low-code/no-code development through personal projects and
+          professional certifications.<br></br> <br></br>With hands-on
+          experience in web development and a growing proficiency in Power Apps,
+          Power Automate, and Power BI, I’m committed to delivering solutions
+          that not only look great but solve real business problems. Whether
+          you&apos;re looking to revamp your website or streamline your business
+          processes, I&apos;m here to help!
         </p>
       </section>
       <section className='flex flex-col lg:grid lg:grid-cols-2 gap-6 px-6 pt-8 pb-10 md:p-10 md:pb-12 border-b border-[#ffffff1a]'>
@@ -33,8 +38,8 @@ const About = () => {
           🏆 Showcasing My Awards and Honors
         </h2>
         <div className='flex flex-col gap-2'>
-          {[1, 2, 3].map((item, index) => (
-            <AwardCard key={index} />
+          {certifications.map((item, index) => (
+            <AwardCard key={index} award={item} />
           ))}
         </div>
       </section>

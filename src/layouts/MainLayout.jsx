@@ -41,8 +41,16 @@ const MainLayout = () => {
           `py-6 px-5 ${backgroundClass} flex items-center justify-center h-dvh`,
         ]}
       >
-        <div className='w-full h-full max-w-screen-xl mx-auto bg-[#000000e6] rounded-lg overflow-hidden'>
-          <div className='mockup-browser h-full flex relative'>
+        <div className='w-full h-full flex flex-col bg-[#000000d9] max-w-screen-xl mx-auto rounded-lg overflow-hidden'>
+          <div className='w-full flex justify-center items-center h-12 relative px-5 py-[18px] bg-[#0003] border-b border-[#ffffff1a] text-center text-[#ffffff4d]'>
+            <div className='flex absolute gap-2 left-5 items-center justify-center'>
+              <div className='w-3 h-3 rounded-full bg-[#ffffff26] hover:bg-[#ffffff57]'></div>
+              <div className='w-3 h-3 rounded-full bg-[#ffffff26] hover:bg-[#ffffff57]'></div>
+              <div className='w-3 h-3 rounded-full bg-[#ffffff26] hover:bg-[#ffffff57]'></div>
+            </div>
+            Vishal Sharma
+          </div>
+          <div className='mockup-browser flex flex-1 relative'>
             {/* Left Sidebar */}
             <div
               className={`${
@@ -95,7 +103,7 @@ const MainLayout = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className='fixed md:hidden top-[44px] right-11 z-[101] h-10 w-10 p-[10px] rounded-xl border border-[#ffffff0d] backdrop-blur-2xl'>
+            <div className='fixed md:hidden top-[92px] right-11 z-[101] h-10 w-10 p-[10px] rounded-xl border border-[#ffffff0d] backdrop-blur-2xl'>
               <img
                 src={isSidebarOpen ? Close : Menu} // Toggle between icons
                 alt='menu'
