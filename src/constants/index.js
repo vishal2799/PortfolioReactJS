@@ -14,8 +14,9 @@ import {
   Memoji1,
   Portfolio1,
   Portfolio2,
-  Portfolio3,
-  Portfolio4,
+  Home,
+  CreateBudget,
+  CreateExpense,
 } from '../assets/images';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -201,27 +202,24 @@ export const servicesSkills = [
 export const portfolioItems = [
   {
     id: 1,
+    image: Home,
+    title: 'Budget Tracker',
+    desc: 'Power Platform',
+    images: [Home, CreateBudget, CreateExpense],
+  },
+  {
+    id: 1,
     image: Portfolio1,
     title: 'Squash',
     desc: 'Website',
+    images: [Home, CreateBudget, CreateExpense],
   },
   {
     id: 1,
     image: Portfolio2,
     title: 'Squash',
     desc: 'Website',
-  },
-  {
-    id: 1,
-    image: Portfolio3,
-    title: 'Squash',
-    desc: 'Website',
-  },
-  {
-    id: 1,
-    image: Portfolio4,
-    title: 'Squash',
-    desc: 'Website',
+    images: [Home, CreateBudget, CreateExpense],
   },
 ];
 

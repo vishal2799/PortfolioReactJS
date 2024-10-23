@@ -22,8 +22,14 @@ import Project1 from './project1.avif';
 import Project2 from './project2.avif';
 import Project3 from './project3.avif';
 import Close from './close.svg';
+import Home from './Home.png';
+import CreateBudget from './CreateBudget.png';
+import CreateExpense from './CreateExpense.png';
 
 export {
+  Home,
+  CreateBudget,
+  CreateExpense,
   Menu,
   Smiley,
   Suitcase,
