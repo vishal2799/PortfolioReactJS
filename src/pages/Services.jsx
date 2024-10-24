@@ -31,7 +31,11 @@ const Services = () => {
               className='flex flex-col justify-center items-center py-12 px-5 rounded-xl text-[#2ef171] bg-[#2ef1710d] hover:bg-[#2ef1722d] border border-[#2ef1710d]'
             >
               <div className='relative flex flex-col justify-start items-center gap-[10px]'>
-                <item.icon className='w-12 h-12' />
+                {item.svg ? (
+                  <img src={item.icon} className='w-12 h-12' />
+                ) : (
+                  <item.icon className='w-12 h-12' />
+                )}
                 <div className='text-xs font-medium'>{item.label}</div>
               </div>
             </a>

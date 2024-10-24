@@ -17,9 +17,23 @@ import {
   Home,
   CreateBudget,
   CreateExpense,
+  PowerPlatform,
+  PowerApps,
+  PowerAutomate,
 } from '../assets/images';
-import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaFigma,
+  FaPenFancy,
+  FaBriefcase,
+} from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { IoLogoJavascript } from 'react-icons/io5';
 
 export const navLinks = [
   { id: 1, label: 'About', url: '/about' },
@@ -124,12 +138,32 @@ export const aboutSkills = [
   },
   {
     id: 1,
+    label: 'Low-Code/No-Code',
+    color: '#ffc427',
+  },
+  {
+    id: 1,
+    label: 'Microsoft Power Platform',
+    color: '#ffc427',
+  },
+  {
+    id: 1,
     label: 'UI/UX Design',
     color: '#ffc427',
   },
   {
     id: 1,
+    label: 'Power Apps',
+    color: '#ffc427',
+  },
+  {
+    id: 1,
     label: 'Animation & Interactivity',
+    color: '#ffc427',
+  },
+  {
+    id: 1,
+    label: 'Power Automate',
     color: '#ffc427',
   },
   {
@@ -152,23 +186,23 @@ export const aboutSkills = [
 export const contactFollow = [
   {
     id: 1,
-    url: '/',
-    icon: FaInstagram,
-  },
-  {
-    id: 2,
-    url: '/',
-    icon: FaXTwitter,
-  },
-  {
-    id: 3,
-    url: '/',
+    url: 'https://linkedin.com/in/vishal2799',
     icon: FaLinkedin,
   },
   {
-    id: 4,
-    url: '/',
+    id: 2,
+    url: 'https://github.com/vishal2799',
     icon: FaGithub,
+  },
+  {
+    id: 3,
+    url: 'https://instagram.com/disisvishal',
+    icon: FaInstagram,
+  },
+  {
+    id: 4,
+    url: 'https://x.com/vishal_2799',
+    icon: FaXTwitter,
   },
 ];
 
@@ -176,26 +210,58 @@ export const servicesSkills = [
   {
     id: 1,
     url: '/',
-    icon: FaInstagram,
-    label: 'HTML 5',
+    icon: FaHtml5,
+    label: 'HTML5',
+    svg: false,
   },
   {
     id: 2,
     url: '/',
-    icon: FaXTwitter,
-    label: 'HTML 5',
+    icon: FaCss3Alt,
+    label: 'CSS3',
+    svg: false,
   },
   {
     id: 3,
     url: '/',
-    icon: FaLinkedin,
-    label: 'HTML 5',
+    icon: FaReact,
+    label: 'React',
+    svg: false,
   },
   {
     id: 4,
     url: '/',
-    icon: FaGithub,
-    label: 'HTML 5',
+    icon: PowerPlatform,
+    label: 'Power Platform',
+    svg: true,
+  },
+  {
+    id: 5,
+    url: '/',
+    icon: PowerApps,
+    label: 'Power Apps',
+    svg: true,
+  },
+  {
+    id: 6,
+    url: '/',
+    icon: PowerAutomate,
+    label: 'Power Automate',
+    svg: true,
+  },
+  {
+    id: 7,
+    url: '/',
+    icon: IoLogoJavascript,
+    label: 'JavaScript',
+    svg: false,
+  },
+  {
+    id: 7,
+    url: '/',
+    icon: FaFigma,
+    label: 'Figma',
+    svg: false,
   },
 ];
 
@@ -228,63 +294,65 @@ export const servicesList = [
     title: 'Frontend Development',
     description:
       'I design and develop responsive websites and web applications using HTML, CSS, JavaScript, React.js, and Bootstrap.',
-    icon: FaLinkedin,
+    icon: FaPenFancy,
     tags: [
       {
         id: 1,
-        label: 'Front-End Development',
+        label: 'React',
         color: '#2ef171',
       },
       {
         id: 1,
-        label: 'UI/UX Design',
+        label: 'Tailwind CSS',
         color: '#2ef171',
       },
       {
         id: 1,
-        label: 'Animation & Interactivity',
+        label: 'API Integration',
         color: '#2ef171',
       },
       {
         id: 1,
-        label: 'Responsive Design',
+        label: 'JavaScript',
         color: '#2ef171',
       },
     ],
+    svg: false,
   },
   {
     title: 'Power Platform Solutions',
     description:
       'Building apps, automating workflows, and visualizing data using Power Apps, Power Automate, and Power BI.',
-    icon: FaLinkedin,
+    icon: PowerPlatform,
     tags: [
       {
         id: 1,
-        label: 'Front-End Development',
+        label: 'Power Apps',
         color: '#2ef171',
       },
       {
         id: 1,
-        label: 'UI/UX Design',
+        label: 'Power Automate',
         color: '#2ef171',
       },
       {
         id: 1,
-        label: 'Animation & Interactivity',
+        label: 'Power Pages',
         color: '#2ef171',
       },
       {
         id: 1,
-        label: 'Responsive Design',
+        label: 'Dataverse',
         color: '#2ef171',
       },
     ],
+    svg: true,
   },
   {
     title: 'Freelance Projects',
     description:
       'I offer freelance services, helping clients turn their ideas into functional and well-designed digital products.',
-    icon: FaLinkedin,
+    icon: FaBriefcase,
     tags: [
       {
         id: 1,
@@ -307,11 +375,22 @@ export const servicesList = [
         color: '#2ef171',
       },
     ],
+    svg: false,
   },
 ];
 
 export const certifications = [
-  { id: 1, title: 'AZ-900', year: '2024' },
-  { id: 2, title: 'PL-900', year: '2024' },
-  { id: 3, title: 'PL-200', year: '2024' },
+  {
+    id: 1,
+    title: '🏅 AZ-900',
+    year: '2024',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/VishalSharma-3832/DAD4E4E39B4C3E8?sharingId=CF6179E345C022D6',
+  },
+  {
+    id: 2,
+    title: '🏆 PL-900',
+    year: '2024',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/VishalSharma-3832/7225DF99FD70C4F2?sharingId=CF6179E345C022D6',
+  },
+  { id: 3, title: '🥇 PL-200(In Progress)', year: '2024', url: '/about' },
 ];

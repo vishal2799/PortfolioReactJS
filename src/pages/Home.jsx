@@ -14,9 +14,8 @@ const Home = () => {
             👋 Hello, I&apos;m Vishal – Crafting Creative Code!
           </h1>
           <p className='max-w-96 text-sm font-medium text-[#ffffff80] lg:max-w-72'>
-            As a creative developer, I blend code and design to build unique,
-            user-centric experiences. Let&apos;s turn your ideas into a dynamic
-            and engaging digital reality!
+            Frontend Developer | Power Platform Enthusiast | Building with code
+            & low-code solutions to solve real-world problems.
           </p>
         </div>
       </section>

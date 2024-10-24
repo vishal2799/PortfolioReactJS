@@ -71,7 +71,7 @@ const MainLayout = () => {
                     Vishal Sharma
                   </div>
                   <div className='text-white text-opacity-50 text-sm'>
-                    Creative Developer
+                    Software Developer
                   </div>
                 </div>
               </div>

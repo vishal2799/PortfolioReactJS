@@ -25,8 +25,14 @@ import Close from './close.svg';
 import Home from './Home.png';
 import CreateBudget from './CreateBudget.png';
 import CreateExpense from './CreateExpense.png';
+import PowerPlatform from './PowerPlatform_scalable.svg';
+import PowerApps from './PowerApps_scalable.svg';
+import PowerAutomate from './PowerAutomate_scalable.svg';
 
 export {
+  PowerPlatform,
+  PowerApps,
+  PowerAutomate,
   Home,
   CreateBudget,
   CreateExpense,

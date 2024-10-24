@@ -6,7 +6,11 @@ const ServiceCard = ({ service }) => {
     <div className='px-5 pt-6 pb-8 flex flex-col flex-1 justify-start rounded-xl gap-16 relative overflow-hidden text-[#2ef171] bg-[#2ef1710d] border border-[#2ef1710d]'>
       <div className='flex flex-col justify-start items-start gap-6'>
         <div className='p-4 flex justify-center items-center rounded-xl bg-[#2ef1710d] border border-[#2ef1710d]'>
-          <service.icon className='text-2xl' />
+          {service.svg ? (
+            <img src={service.icon} className='w-6 h-6' />
+          ) : (
+            <service.icon className='text-2xl' />
+          )}
         </div>
         <div className='flex flex-col gap-2 max-w-80 w-full'>
           <h2 className='text-lg font-medium'>{service.title}</h2>

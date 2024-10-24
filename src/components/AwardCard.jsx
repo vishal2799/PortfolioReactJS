@@ -4,11 +4,11 @@ import { hexToRgb } from '../utils';
 const AwardCard = ({ award }) => {
   return (
     <a
-      href=''
+      href={award.url}
       className='flex gap-3 px-5 py-3 rounded-xl relative justify-start items-center bg-[#ffc4270d] hover:bg-[#ffc5274d] text-[#ffc427]'
     >
       <div className='flex flex-1 justify-start items-center gap-3'>
-        <div className='flex-1 text-sm font-medium'>🏆 {award.title}</div>
+        <div className='flex-1 text-sm font-medium'>{award.title}</div>
         <div className='w-10 text-right text-[#ffc42759]'>{award.year}</div>
       </div>
       <div
