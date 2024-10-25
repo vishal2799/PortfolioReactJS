@@ -23,19 +23,31 @@ import Project2 from './project2.avif';
 import Project3 from './project3.avif';
 import Close from './close.svg';
 import Home from './Home.png';
+import Home2 from './Home2.png';
+import CreateTicket from './Create.png';
+import EditDetail from './EditDetail.png';
 import CreateBudget from './CreateBudget.png';
 import CreateExpense from './CreateExpense.png';
 import PowerPlatform from './PowerPlatform_scalable.svg';
 import PowerApps from './PowerApps_scalable.svg';
 import PowerAutomate from './PowerAutomate_scalable.svg';
+import Ecom from './Ecom.png';
+import Ecom2 from './Ecom2.png';
+import Ecom3 from './Ecom3.png';
 
 export {
+  Ecom,
+  Ecom2,
+  Ecom3,
   PowerPlatform,
   PowerApps,
   PowerAutomate,
   Home,
   CreateBudget,
   CreateExpense,
+  Home2,
+  CreateTicket,
+  EditDetail,
   Menu,
   Smiley,
   Suitcase,
