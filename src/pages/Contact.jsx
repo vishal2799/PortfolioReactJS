@@ -118,7 +118,7 @@ const Contact = () => {
             <div className='w-60 h-16 rounded-[100px] mt-[-32px] blur-2xl'></div>
           </div>
         </div>
-        <div className='flex flex-col gap-3 flex-initial xl:justify-between'>
+        <div className='flex flex-col gap-3 flex-initial'>
           <div className='flex relative flex-col gap-5 rounded-xl py-6 px-5 bg-[#20d7ff0d] border border-[#20d7ff0d]'>
             <h3 className='text-base md:text-xl font-medium text-white'>
               🔹 Follow Me
