@@ -408,5 +408,10 @@ export const certifications = [
     year: '2024',
     url: 'https://learn.microsoft.com/api/credentials/share/en-us/VishalSharma-3832/7225DF99FD70C4F2?sharingId=CF6179E345C022D6',
   },
-  { id: 3, title: '🥇 PL-200(In Progress)', year: '2024', url: '/about' },
+  {
+    id: 3,
+    title: '🥇 PL-200',
+    year: '2024',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/VishalSharma-3832/345F29111B5FC2F8?sharingId=CF6179E345C022D6',
+  },
 ];

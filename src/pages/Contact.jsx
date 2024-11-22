@@ -146,7 +146,8 @@ const Contact = () => {
               </p>
             </div>
             <a
-              href=''
+              href='https://calendly.com/sharma-vishal2799/30min'
+              target='_blank'
               className='flex items-center justify-center gap-[6px] px-4 py-3 rounded-[10px] bg-white bg-opacity-10 hover:bg-opacity-25 text-sm font-medium text-white text-opacity-65 border border-white border-opacity-5'
             >
               Book a Call
